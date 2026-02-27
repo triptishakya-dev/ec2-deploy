@@ -7,9 +7,12 @@ const app = express();
 const port = 3000;
 
 app.get("/api/test", (req, res) => {
-  res.send("Health is ok");
+  res.send("api is working fine");
 });
 
+app.get("/api/health", (req, res) => {
+  res.send("Health is ok");
+});
 
 
 
