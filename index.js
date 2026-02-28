@@ -14,6 +14,10 @@ app.get("/api/health", (req, res) => {
   res.send("Health is ok");
 });
 
+app.get("/api/health", (req, res) => {
+  res.send("Health is ok");
+});
+
 
 
 app.listen(port, () => {
