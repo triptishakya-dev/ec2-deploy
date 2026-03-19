@@ -19,6 +19,10 @@ app.get("/api/tripti", (req, res) => {
   res.send("nikhil is ok");
 });
 
+app.get("/api/nikhil", (req, res) => {
+  res.send("tripti is ok");
+});
+
 
 
 
