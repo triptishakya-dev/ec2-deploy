@@ -26,8 +26,8 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-        script: |
-          cd /home/ubuntu/ec2-deploy
-          git pull origin main
-          npm install
-          pm2 start index.js 
+          script: |
+            cd /home/ubuntu/ec2-deploy
+            git pull origin main
+            npm install
+            pm2 restart pipeline || pm2 start index.js --name pipeline
