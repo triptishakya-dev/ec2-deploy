@@ -15,6 +15,10 @@ app.get("/api/health", (req, res) => {
 });
 
 
+app.get("/api/tripti", (req, res) => {
+  res.send("nikhil is ok");
+});
+
 
 
 
